@@ -1,17 +1,22 @@
 // Utils.h
 // 通用工具库头文件
-
 #ifndef UTILS_H
 #define UTILS_H
-#include <iostream> // 输入输出流
-#include <string>   // 处理字符串
+#include <iostream>
+#include <string>
 
 namespace Utils
 {
-    namespace out
+    namespace Out
     {
-        void out_GW(std::string);       // 程序正常输出
-        void out_error(std::string); // 程序执行异常输出
-    }
-}
-#endif //! UTILS_H
+        // 程序正常信息输出
+        // 待打印的文本信息
+        void PrintMsg(const std::string& message);
+
+        // 程序错误信息输出
+        // 错误描述文本
+        void PrintError(const std::string& message);
+    } // namespace Out
+} // namespace Utils
+
+#endif // !UTILS_H

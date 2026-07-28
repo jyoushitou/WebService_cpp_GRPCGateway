@@ -6,16 +6,16 @@
 
 namespace Utils
 {
-    namespace out
+    namespace Out
     {
-        void out_GW(std::string str) // 程序正常输出
+        void PrintMsg(const std::string& message) // 程序正常输出
         {
-            std::cout << "[GW]" << str << std::endl;
+            std::cout << "[GW]" << message << std::endl;
         }
 
-        void out_error(std::string str) // 程序执行异常输出
+        void PrintError(const std::string& message) // 程序执行异常输出
         {
-            std::cout << "[error]" << str << std::endl;
+            std::cerr << "[error]" << message << std::endl;
         }
-    }
-}
+    } // namespace Out
+} // namespace Utils
